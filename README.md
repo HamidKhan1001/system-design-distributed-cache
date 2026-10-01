@@ -1,5 +1,7 @@
 # system-design-distributed-cache
 
+[![CI](https://github.com/HamidKhan1001/system-design-distributed-cache/actions/workflows/ci.yml/badge.svg)](https://github.com/HamidKhan1001/system-design-distributed-cache/actions/workflows/ci.yml)
+
 An in-process key-value cache library in Python. It implements LRU and LFU eviction with O(1) operations, a stampede shield that collapses concurrent recomputation of the same key, and a sharded wrapper that spreads keys across independent LRU instances.
 
 Despite the repository name, this is a single-process library. There is no network layer, replication, or cluster membership. It is a study of the data structures and concurrency patterns that sit inside a distributed cache node, not a deployable cache server.
